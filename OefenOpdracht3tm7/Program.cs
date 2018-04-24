@@ -24,12 +24,12 @@ namespace OefenOpdracht3tm7
             if((ingegevenNummer >= 3) && (ingegevenNummer <= 7))
             {
                 Console.ForegroundColor = ConsoleColor.Blue;
-                Console.WriteLine($"De ingegevenNummer {ingegevenNummer} is correct");
+                Console.WriteLine($"Het ingegevenNummer {ingegevenNummer} is correct");
             }
             else
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine($"De ingegevenNummer {ingegevenNummer} is fout");
+                Console.WriteLine($"Het ingegevenNummer {ingegevenNummer} is fout");
             }
             Console.ReadLine();
         }
