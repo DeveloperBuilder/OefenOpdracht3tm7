@@ -10,11 +10,14 @@ namespace OefenOpdracht3tm7
 
 - Zet input in een numerieke variabele “ingegevenNummer”.
 
-- Controleer de gebruikersingave en indien deze incorrect is geef je een foutmelding waarna het programma afsluit. Gebruik een if-constructie.
+- Controleer de gebruikersingave en indien deze incorrect is geef je een foutmelding waarna het programma afsluit. 
+  Gebruik een if-constructie.
 
-- Print een “enter”. Print de waarden 0 t/m “ingegevenNummer” op het scherm, gescheiden door een liggend streepje. Gebruik een while-constructie.
+- Print een “enter”. Print de waarden 0 t/m “ingegevenNummer” op het scherm, gescheiden door een liggend streepje. 
+  Gebruik een while-constructie.
 
-- Print een “enter”  en voer middels een for-constructie de nummers uit stap 4 in omgekeerde volgorde. Print daarna nogmaals een “enter”. */
+- Print een “enter”  en voer middels een for-constructie de nummers uit stap 4 in omgekeerde volgorde. 
+  Print daarna nogmaals een “enter”. */
     class Program
     {
         static void Main(string[] args)
@@ -29,8 +32,10 @@ namespace OefenOpdracht3tm7
             else
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine($"Het ingegevenNummer {ingegevenNummer} is fout");
+                Console.WriteLine($"Het ingegevenNummer {ingegevenNummer} is incorrect");
             }
+            string enter = "Enter";
+            Console.WriteLine(enter);
             Console.ReadLine();
         }
     }
