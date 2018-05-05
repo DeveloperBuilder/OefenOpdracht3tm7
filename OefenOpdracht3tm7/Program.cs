@@ -48,6 +48,13 @@ namespace OefenOpdracht3tm7
             Console.ForegroundColor = ConsoleColor.Magenta;
             string enter1 = "Enter";
             Console.WriteLine(enter1);
+            for (int i = ingegevenNummer; i <= 0; i--)
+            {
+                Console.WriteLine(i);
+            }
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            string enter2 = "Enter";
+            Console.WriteLine(enter2);
             Console.ReadLine();
         }
     }
