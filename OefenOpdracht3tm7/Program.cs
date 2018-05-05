@@ -34,8 +34,20 @@ namespace OefenOpdracht3tm7
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine($"Het ingegevenNummer {ingegevenNummer} is incorrect");
             }
+            Console.ForegroundColor = ConsoleColor.Magenta;
             string enter = "Enter";
             Console.WriteLine(enter);
+            int waarde = 0;
+            while (waarde <= ingegevenNummer)
+            {
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine(waarde);
+                Console.WriteLine("_");
+                waarde++;
+            }
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            string enter1 = "Enter";
+            Console.WriteLine(enter1);
             Console.ReadLine();
         }
     }
