@@ -41,16 +41,20 @@ namespace OefenOpdracht3tm7
             while (waarde <= ingegevenNummer)
             {
                 Console.ForegroundColor = ConsoleColor.White;
-                Console.WriteLine(waarde);
+                Console.WriteLine($"De waarde 0 t/m ingegevenNummer: {waarde}");
                 Console.WriteLine("_");
                 waarde++;
             }
             Console.ForegroundColor = ConsoleColor.Magenta;
             string enter1 = "Enter";
             Console.WriteLine(enter1);
-            for (int i = ingegevenNummer; i <= 0; i--)
+            for (int i = ingegevenNummer; i <= 7; i--)
             {
-                Console.WriteLine(i);
+                for (int j = ingegevenNummer; i >= 0; i--)
+                {
+                    Console.ForegroundColor = ConsoleColor.DarkYellow;
+                    Console.WriteLine($"De for loop constructie van hoog naar laag {i}");
+                }
             }
             Console.ForegroundColor = ConsoleColor.Magenta;
             string enter2 = "Enter";
