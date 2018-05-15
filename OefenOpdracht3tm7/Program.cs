@@ -33,32 +33,38 @@ namespace OefenOpdracht3tm7
             {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine($"Het ingegevenNummer {ingegevenNummer} is incorrect");
+                Console.ReadLine();
+                return;
             }
-            Console.ForegroundColor = ConsoleColor.Magenta;
-            string enter = "Enter";
-            Console.WriteLine(enter);
-            int waarde = 0;
+
+            Console.WriteLine();
+
+            Console.WriteLine($"De waarden 0 t/m {ingegevenNummer}:");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write("0");
+
+            int waarde = 1;
+
             while (waarde <= ingegevenNummer)
             {
-                Console.ForegroundColor = ConsoleColor.White;
-                Console.WriteLine($"De waarde 0 t/m ingegevenNummer: {waarde}");
-                Console.WriteLine("_");
+                Console.Write($"_{waarde}");
                 waarde++;
             }
-            Console.ForegroundColor = ConsoleColor.Magenta;
-            string enter1 = "Enter";
-            Console.WriteLine(enter1);
-            for (int i = ingegevenNummer; i <= 7; i--)
+
+            Console.WriteLine();
+
+
+            Console.WriteLine($"De waarden {ingegevenNummer} t/m 0:");
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+
+            Console.Write($"{ingegevenNummer}");
+            for (int i = ingegevenNummer - 1; i >= 0; i--)
             {
-                for (int j = ingegevenNummer; i >= 0; i--)
-                {
-                    Console.ForegroundColor = ConsoleColor.DarkYellow;
-                    Console.WriteLine($"De for loop constructie van hoog naar laag {i}");
-                }
+                Console.Write($"_{i}");
             }
-            Console.ForegroundColor = ConsoleColor.Magenta;
-            string enter2 = "Enter";
-            Console.WriteLine(enter2);
+
+            Console.WriteLine();
+
             Console.ReadLine();
         }
     }
