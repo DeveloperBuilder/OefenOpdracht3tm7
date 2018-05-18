@@ -42,7 +42,6 @@ namespace OefenOpdracht3tm7
             Console.WriteLine($"De waarden 0 t/m {ingegevenNummer}:");
             Console.ForegroundColor = ConsoleColor.White;
             Console.Write("0");
-
             int waarde = 1;
 
             while (waarde <= ingegevenNummer)
@@ -51,7 +50,7 @@ namespace OefenOpdracht3tm7
                 waarde++;
             }
 
-            Console.WriteLine();
+            Console.WriteLine("\n");
 
 
             Console.WriteLine($"De waarden {ingegevenNummer} t/m 0:");
